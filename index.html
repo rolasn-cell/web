@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LMS Abdie — Belajar terarah, berkarya bermakna</title>
+    <meta
+      name="description"
+      content="Ruang belajar untuk mengembangkan media digital mahasiswa PGSD. Jelajahi lima tahap ABDIE, kolaborasi, dan perkembangan kompetensi dalam satu alur."
+    />
+    <meta name="theme-color" content="#e7f2ff" />
+    <link rel="icon" type="image/png" href="logo-black.png" />
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <script src="app.js?v=3" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#utama">Lewati navigasi</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+      <a class="brand" href="#utama" aria-label="LMS Abdie, beranda"
+        ><img src="logo-black.png" alt="" width="46" height="46" /><span
+          >LMS <b>ABDIE</b></span
+        ></a
+      >
+      <nav id="navigation" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a><a href="#metode">Metode ABDIE</a
+        ><a href="#fitur">Fitur</a><a href="#pengguna">Pengguna</a
+        ><a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="motion-toggle"
+          type="button"
+          aria-label="Jeda animasi"
+          aria-pressed="false"
+          title="Jeda animasi"
+        >
+          <svg class="pause-icon" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M7 5v10M13 5v10" /></svg
+          ><svg class="resume-icon" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="m7 4 9 6-9 6Z" />
+          </svg></button
+        ><a class="button button-dark button-small" href="#metode"
+          ><span>Mulai jelajahi</span></a
+        ><button
+          class="menu-toggle"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="utama">
+      <section class="hero-shell" aria-labelledby="hero-title">
+        <div class="hero-pin">
+          <div class="container hero-inner">
+            <div class="hero-heading">
+              <p class="eyebrow">
+                <span class="tiny-cross" aria-hidden="true">+</span> RUANG
+                BELAJAR CALON PENDIDIK
+              </p>
+              <h1 id="hero-title">
+                <span class="title-line">Dari <em>ide pembelajaran</em></span
+                ><span class="title-line">jadi karya yang bermakna.</span>
+              </h1>
+            </div>
+            <div class="hero-grid">
+              <div class="hero-stat">
+                <span class="stat-symbol" aria-hidden="true"
+                  >A · B · D · I · E</span
+                ><strong>05</strong
+                ><span>Tahap pengembangan.<br />Satu proses yang utuh.</span>
+                <p>Dirancang untuk<br />mahasiswa PGSD.</p>
+              </div>
+              <div class="demo-wrap" id="jelajahi">
+                <div class="demo-frame" data-tilt>
+                  <div class="demo-top">
+                    <span class="demo-brand"
+                      ><img
+                        src="logo-black.png"
+                        alt=""
+                        width="28"
+                        height="28"
+                      />Ruang belajar</span
+                    ><span class="demo-tag">PRATINJAU</span
+                    ><span class="demo-avatar" aria-label="Contoh mahasiswa"
+                      >M</span
+                    >
+                  </div>
+                  <div class="demo-body">
+                    <div class="demo-title">
+                      <div>
+                        <p class="small-label">
+                          PENGEMBANGAN MEDIA PEMBELAJARAN
+                        </p>
+                        <h2 id="demo-title">Rancang sebelum berkarya.</h2>
+                      </div>
+                      <span class="demo-step" id="demo-step"
+                        >02<span>/05</span></span
+                      >
+                    </div>
+                    <div
+                      class="preview-tabs"
+                      role="tablist"
+                      aria-label="Pratinjau tahap ABDIE"
+                    >
+                      <button
+                        id="preview-tab-0"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="preview-panel"
+                        tabindex="-1"
+                        data-preview="0"
+                      >
+                        A</button
+                      ><button
+                        id="preview-tab-1"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="preview-panel"
+                        data-preview="1"
+                      >
+                        B</button
+                      ><button
+                        id="preview-tab-2"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="preview-panel"
+                        tabindex="-1"
+                        data-preview="2"
+                      >
+                        D</button
+                      ><button
+                        id="preview-tab-3"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="preview-panel"
+                        tabindex="-1"
+                        data-preview="3"
+                      >
+                        I</button
+                      ><button
+                        id="preview-tab-4"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="preview-panel"
+                        tabindex="-1"
+                        data-preview="4"
+                      >
+                        E
+                      </button>
+                    </div>
+                    <div
+                      id="preview-panel"
+                      class="demo-panel"
+                      role="tabpanel"
+                      tabindex="0"
+                      aria-labelledby="preview-tab-1"
+                    >
+                      <div class="demo-panel-heading">
+                        <span id="preview-name">Blueprinting</span
+                        ><span class="status-pill">Contoh aktivitas</span>
+                      </div>
+                      <p id="preview-description">
+                        Susun ide dan alur pembelajaran dalam blueprint yang
+                        utuh.
+                      </p>
+                      <div class="demo-tasks">
+                        <div>
+                          <span class="check-mark" aria-hidden="true">✓</span
+                          ><span id="preview-task-1"
+                            >Storyboard pembelajaran</span
+                          >
+                        </div>
+                        <div>
+                          <span class="empty-check" aria-hidden="true"></span
+                          ><span id="preview-task-2">Blueprint canvas</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="demo-bottom">
+                      <span>Proses terarah. Karya terdokumentasi.</span
+                      ><span class="demo-progress"><i></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="demo-caption">
+                  Jelajahi setiap tahap · Ilustrasi dengan data contoh
+                </p>
+              </div>
+              <div class="hero-aside">
+                <p>
+                  Kembangkan media digital dengan arah yang jelas, umpan balik
+                  yang berarti, dan ruang untuk bertumbuh.
+                </p>
+                <a class="button" href="#metode"
+                  ><span>Kenali metode ABDIE</span></a
+                ><a class="quiet-link" href="#tentang">Tentang LMS Abdie</a>
+              </div>
+            </div>
+            <div class="hero-bottom">
+              <span>Mulai dari kebutuhan siswa.</span>
+              <div>
+                <span>Analyze</span><i></i><span>Blueprinting</span><i></i
+                ><span>Digital Design</span><i></i><span>Implementation</span
+                ><i></i><span>Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container intro-section" id="tentang">
+        <div class="section-meta" data-reveal>
+          <span>01 / TENTANG ABDIE</span><span>BELAJAR DENGAN TUJUAN</span>
+        </div>
+        <h2 class="statement" data-reveal>
+          Ide kreatif perlu<br /><span>landasan yang kuat.</span>
+        </h2>
+        <div class="intro-bottom">
+          <p data-reveal>
+            LMS Abdie mendampingi mahasiswa PGSD mengembangkan media
+            pembelajaran digital. Dari memahami kebutuhan siswa hingga
+            menyempurnakan karya, setiap proses punya arah dan tercatat.
+          </p>
+          <div data-reveal>
+            <p>
+              Tetap gunakan aplikasi kreatif pilihanmu. Abdie menghubungkan
+              proses, kolaborasi, dan perkembangan kompetensimu.
+            </p>
+            <div class="tool-list">
+              <span>Canva</span><span>PowerPoint</span><span>CapCut</span
+              ><span>Aplikasi pilihanmu</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="method-section" id="metode">
+        <div class="container section">
+          <div class="section-meta" data-reveal>
+            <span>02 / METODE ABDIE</span
+            ><span>LIMA TAHAP, SALING TERHUBUNG</span>
+          </div>
+          <div class="method-layout">
+            <div class="method-heading" data-reveal>
+              <h2>Satu langkah.<br />Satu <span>kemajuan.</span></h2>
+              <p>
+                Setiap tahap menjadi fondasi untuk tahap berikutnya. Pilih tahap
+                untuk melihat proses dan hasilnya.
+              </p>
+              <div class="method-small-note">
+                <span aria-hidden="true">05</span>
+                <p>Dari analisis kebutuhan<br />hingga portofolio digital.</p>
+              </div>
+            </div>
+            <div class="method-explorer" data-reveal>
+              <div
+                class="method-tabs"
+                role="tablist"
+                aria-label="Tahapan metode ABDIE"
+                aria-orientation="vertical"
+              >
+                <button
+                  role="tab"
+                  id="method-tab-0"
+                  aria-selected="true"
+                  aria-controls="method-panel"
+                  data-method="0"
+                >
+                  <span>01</span><strong>Analyze</strong
+                  ><span class="method-symbol" aria-hidden="true">−</span>
+                </button>
+                <button
+                  role="tab"
+                  id="method-tab-1"
+                  aria-selected="false"
+                  aria-controls="method-panel"
+                  tabindex="-1"
+                  data-method="1"
+                >
+                  <span>02</span><strong>Blueprinting</strong
+                  ><span class="method-symbol" aria-hidden="true">+</span>
+                </button>
+                <button
+                  role="tab"
+                  id="method-tab-2"
+                  aria-selected="false"
+                  aria-controls="method-panel"
+                  tabindex="-1"
+                  data-method="2"
+                >
+                  <span>03</span><strong>Digital Design</strong
+                  ><span class="method-symbol" aria-hidden="true">+</span>
+                </button>
+                <button
+                  role="tab"
+                  id="method-tab-3"
+                  aria-selected="false"
+                  aria-controls="method-panel"
+                  tabindex="-1"
+                  data-method="3"
+                >
+                  <span>04</span><strong>Interactive Implementation</strong
+                  ><span class="method-symbol" aria-hidden="true">+</span>
+                </button>
+                <button
+                  role="tab"
+                  id="method-tab-4"
+                  aria-selected="false"
+                  aria-controls="method-panel"
+                  tabindex="-1"
+                  data-method="4"
+                >
+                  <span>05</span><strong>Evaluation & Enhancement</strong
+                  ><span class="method-symbol" aria-hidden="true">+</span>
+                </button>
+              </div>
+              <div
+                id="method-panel"
+                class="method-panel"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="method-tab-0"
+              >
+                <div class="method-panel-top">
+                  <span id="method-kicker">TAHAP 01 / ANALYZE</span
+                  ><b id="method-letter" aria-hidden="true">A</b>
+                </div>
+                <h3 id="method-title">Pahami kebutuhan. Temukan arah.</h3>
+                <p id="method-description">
+                  Kenali masalah pembelajaran, karakteristik siswa, materi, dan
+                  teknologi yang dibutuhkan sebelum mulai merancang media.
+                </p>
+                <ul id="method-list">
+                  <li>Analisis kebutuhan pembelajaran</li>
+                  <li>Analisis karakteristik peserta didik</li>
+                  <li>Analisis materi dan teknologi</li>
+                </ul>
+                <div class="method-output">
+                  <span>HASIL TAHAP INI</span
+                  ><strong id="method-output"
+                    >Dokumen analisis kebutuhan</strong
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gate-note" data-reveal>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <rect x="5" y="10" width="14" height="11" rx="3" />
+              <path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3" />
+            </svg>
+            <div>
+              <strong>Maju dengan fondasi yang siap.</strong>
+              <p>
+                Sequential Progress Gate membuka tahap berikutnya setelah syarat
+                tahap sebelumnya terpenuhi. Blueprint perlu disetujui dosen
+                sebelum masuk produksi.
+              </p>
+            </div>
+            <span>SEQUENTIAL<br />PROGRESS GATE</span>
+          </div>
+        </div>
+      </section>
+      <section class="feature-section section" id="fitur">
+        <div class="container">
+          <div class="section-meta" data-reveal>
+            <span>03 / FITUR PENDUKUNG</span
+            ><span>TERHUBUNG DALAM SATU RUANG</span>
+          </div>
+          <div class="feature-heading" data-reveal>
+            <h2>
+              Ruang untuk belajar.<br /><span>Bekal untuk berkarya.</span>
+            </h2>
+            <div class="carousel-controls">
+              <button
+                type="button"
+                class="carousel-prev"
+                aria-label="Fitur sebelumnya"
+                aria-controls="feature-track"
+                disabled
+              >
+                ‹</button
+              ><button
+                type="button"
+                class="carousel-next"
+                aria-label="Fitur berikutnya"
+                aria-controls="feature-track"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="feature-track"
+          id="feature-track"
+          role="region"
+          aria-label="Empat fitur pendukung, geser untuk menjelajahi"
+          tabindex="0"
+        >
+          <article class="feature-card feature-blue">
+            <div class="feature-card-top">
+              <span>01 / PERANCANGAN</span><span aria-hidden="true">B</span>
+            </div>
+            <div
+              class="feature-visual blueprint-visual"
+              aria-label="Komponen blueprint"
+            >
+              <div class="blueprint-head">
+                <span>Blueprint canvas</span><span>Rancangan media</span>
+              </div>
+              <div class="blueprint-grid">
+                <span><small>01</small>Tujuan pembelajaran</span
+                ><span><small>02</small>Karakteristik siswa</span
+                ><span><small>03</small>Materi & aktivitas</span
+                ><span><small>04</small>Media & evaluasi</span>
+              </div>
+            </div>
+            <h3>Ide yang punya struktur.</h3>
+            <p>
+              Satukan tujuan, materi, aktivitas, dan evaluasi melalui Blueprint
+              Canvas, Storyboard Builder, dan Flowchart Builder.
+            </p>
+            <div class="feature-footer">Rancang sebelum memproduksi.</div>
+          </article>
+          <article class="feature-card feature-ice">
+            <div class="feature-card-top">
+              <span>02 / KOLABORASI</span><span aria-hidden="true">I</span>
+            </div>
+            <div class="feature-visual discussion-visual">
+              <div class="discussion-message">
+                <span class="person">M</span>
+                <div>
+                  <strong>Diskusi & peer teaching</strong
+                  ><span>Temukan perspektif baru.</span>
+                </div>
+              </div>
+              <div class="discussion-message">
+                <span class="person lecturer">D</span>
+                <div>
+                  <strong>Review & umpan balik</strong
+                  ><span>Sempurnakan bersama.</span>
+                </div>
+              </div>
+            </div>
+            <h3>Karya tumbuh bersama.</h3>
+            <p>
+              Diskusi, peer teaching, dan penilaian sejawat memberi ruang untuk
+              saling belajar dan memperbaiki media.
+            </p>
+            <div class="feature-footer">
+              Mahasiswa & dosen, saling terhubung.
+            </div>
+          </article>
+          <article class="feature-card feature-silver">
+            <div class="feature-card-top">
+              <span>03 / DOKUMENTASI</span><span aria-hidden="true">D</span>
+            </div>
+            <div class="feature-visual revision-visual">
+              <div>
+                <span>v.01</span><strong>Draft awal</strong><span>✓</span>
+              </div>
+              <div>
+                <span>v.02</span><strong>Revisi media</strong><span>✓</span>
+              </div>
+              <div>
+                <span>v.03</span><strong>Produk final</strong><span>✓</span>
+              </div>
+            </div>
+            <h3>Setiap revisi berarti.</h3>
+            <p>
+              Dokumentasikan draft, umpan balik, dan penyempurnaan. Riwayat
+              versi menjaga proses hingga portofolio final.
+            </p>
+            <div class="feature-footer">
+              Proses tercatat, perkembangan terlihat.
+            </div>
+          </article>
+          <article class="feature-card feature-dark">
+            <div class="feature-card-top">
+              <span>04 / ANALYTICS</span><span aria-hidden="true">E</span>
+            </div>
+            <div class="feature-visual analytics-visual">
+              <div><span>Analyze</span><i style="--bar: 85%"></i></div>
+              <div><span>Blueprinting</span><i style="--bar: 70%"></i></div>
+              <div><span>Digital Design</span><i style="--bar: 55%"></i></div>
+              <small>Ilustrasi visual kompetensi</small>
+            </div>
+            <h3>Perkembangan terlihat.</h3>
+            <p>
+              Learning Analytics dan Competency Analytics membantu dosen membaca
+              progres, keterlibatan, dan capaian setiap tahap.
+            </p>
+            <div class="feature-footer">
+              Data untuk mendampingi proses belajar.
+            </div>
+          </article>
+        </div>
+        <div class="container feature-track-footer">
+          <span>Geser untuk menjelajahi fitur</span
+          ><span class="carousel-position" aria-live="polite">01 / 04</span>
+          <div class="carousel-progress" aria-hidden="true"><i></i></div>
+        </div>
+      </section>
+      <section class="audience-section section container" id="pengguna">
+        <div class="section-meta" data-reveal>
+          <span>04 / PENGGUNA</span
+          ><span>BELAJAR BERSAMA, BERTUMBUH BERSAMA</span>
+        </div>
+        <h2 data-reveal>Peran berbeda.<br /><span>Tujuan yang sama.</span></h2>
+        <div class="audience-grid">
+          <article data-reveal>
+            <span class="role-number">01</span>
+            <h3>Mahasiswa</h3>
+            <p>
+              Jalani tahapan belajar, kembangkan media, berkolaborasi, dan
+              bangun portofolio digital dari prosesmu sendiri.
+            </p>
+            <ul>
+              <li>Alur pengembangan terarah</li>
+              <li>Umpan balik yang terdokumentasi</li>
+              <li>Rekam jejak karya & kompetensi</li>
+            </ul>
+          </article>
+          <article data-reveal>
+            <span class="role-number">02</span>
+            <h3>Dosen</h3>
+            <p>
+              Dampingi proses belajar dengan review, persetujuan blueprint, dan
+              gambaran perkembangan setiap mahasiswa.
+            </p>
+            <ul>
+              <li>Monitoring progres mahasiswa</li>
+              <li>Review, penilaian & feedback</li>
+              <li>Learning & Competency Analytics</li>
+            </ul>
+          </article>
+          <article data-reveal>
+            <span class="role-number">03</span>
+            <h3>Administrator</h3>
+            <p>
+              Kelola pengguna, mata kuliah, repository, dan kebutuhan sistem
+              agar kegiatan pembelajaran berjalan tertata.
+            </p>
+            <ul>
+              <li>Manajemen pengguna & kelas</li>
+              <li>Pengelolaan sumber belajar</li>
+              <li>Monitoring aktivitas sistem</li>
+            </ul>
+          </article>
+        </div>
+        <div class="validator-note" data-reveal>
+          <strong>Untuk kebutuhan penelitian</strong>
+          <p>
+            Validator ahli memiliki peran khusus dalam validasi model, LMS, dan
+            produk media, di luar proses pembelajaran reguler.
+          </p>
+        </div>
+      </section>
+      <section class="faq-section section container" id="faq">
+        <div class="faq-heading" data-reveal>
+          <span class="eyebrow">05 / PERTANYAAN UMUM</span>
+          <h2>Mengenal Abdie<br /><span>lebih dekat.</span></h2>
+        </div>
+        <div class="faq-list" data-reveal>
+          <details class="faq-item">
+            <summary>
+              Apa itu LMS Abdie?<span aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                LMS Abdie adalah platform pembelajaran berbasis website yang
+                mengarahkan pengembangan media digital melalui lima tahap:
+                Analyze, Blueprinting, Digital Design, Interactive
+                Implementation, serta Evaluation & Enhancement.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Siapa yang dapat menggunakan LMS Abdie?<span
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Platform ini dirancang untuk mahasiswa Pendidikan Guru Sekolah
+                Dasar (PGSD), dosen, dan administrator. Validator mendapat akses
+                khusus untuk kegiatan penelitian dan pengembangan.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Apakah saya tetap bisa menggunakan Canva atau PowerPoint?<span
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Ya. Kamu bebas menggunakan Canva, PowerPoint, CapCut, aplikasi
+                berbasis AI, atau perangkat kreatif lain. LMS Abdie menjadi
+                ruang untuk mengarahkan dan mendokumentasikan proses
+                pengembangannya.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Apakah tahapan ABDIE harus dikerjakan berurutan?<span
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Ya. Sequential Progress Gate memastikan tahap berikutnya terbuka
+                setelah syarat tahap sebelumnya terpenuhi. Khusus tahap
+                Blueprinting, rancangan perlu disetujui dosen sebelum masuk ke
+                Digital Design.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Apa hasil akhir dari proses pembelajaran?<span
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Hasilnya mencakup dokumen analisis, storyboard, flowchart,
+                blueprint, media pembelajaran digital, jurnal refleksi, dan
+                portofolio digital. Prosesnya juga menghasilkan rekam
+                perkembangan kompetensi mahasiswa.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="closing">
+        <div class="container">
+          <p class="eyebrow" data-reveal>MULAI DARI PROSES YANG TEPAT</p>
+          <h2 data-reveal>
+            Ide pembelajaranmu<br /><span>layak dikembangkan.</span>
+          </h2>
+          <p class="closing-copy" data-reveal>
+            Kenali langkahnya. Rancang medianya. Tumbuh lewat prosesnya.
+          </p>
+          <a class="button" href="#metode" data-reveal
+            ><span>Jelajahi tahapan ABDIE</span></a
+          >
+          <div class="closing-word" aria-hidden="true">abdie.</div>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <div class="footer-main">
+        <a class="brand" href="#utama" aria-label="LMS Abdie, kembali ke atas"
+          ><img src="logo-black.png" alt="" width="46" height="46" /><span
+            >LMS <b>ABDIE</b></span
+          ></a
+        >
+        <p>Belajar terarah. Berkarya bermakna.</p>
+        <a href="#tentang">Tentang LMS Abdie</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> LMS Abdie.</span
+        ><span
+          >Analyze · Blueprinting · Digital Design · Interactive Implementation
+          · Evaluation & Enhancement</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
